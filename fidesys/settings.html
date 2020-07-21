@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>settings</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles/projects.css">
+</head>
+<body>
+	<nav class="settings-nav">
+		<div class="container">
+			<div class="link">
+				<a class="back" href="projects.html">
+					Projects
+				</a>	
+			</div>
+			
+			<div class="title">Settings</div>
+			<div class="person">
+				<div class="avatar">
+					<img src="img/project_name.png" alt="">
+				</div>
+				<div class="name">
+					Jason Holden
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="settings-tabs">
+		<div class="tabs-name">
+			<ul>
+				<li><span>Account</span></li>
+				<li><span>Password</span></li>
+				<li><span>Billing</span></li>
+			</ul>	
+		</div>
+		
+		<div class="tabs-content">
+			<div class="account-content">
+				<form action="" id="person_details">
+					<div class="group">
+						<input type="text" required>
+						<span class="bar"></span>
+						<label>Username</label>
+					</div>
+
+					<div class="group">
+						<input type="email" required>
+						<span class="bar"></span>
+						<label>Email</label>
+					</div>
+
+					<button class="person_details_btn">Update Now</button>
+					<a href="#" class="red">Remove your account completely?</a>
+				</form>
+			</div>
+			<div class="password-content">
+				
+				<form action="" id="change_pass">
+					<div class="group ">
+						<input type="password" class="current_pass" required>
+						<label>Current Password</label>
+					</div>
+			
+
+					<div class="group password-field">
+						<input type="password" class="new_pass" required>
+						<label>New Password</label>
+						<span class="checkmark-show ">show</span>
+					</div>
+
+					<button class="change_pass_btn">Update Now</button>
+				</form>
+			</div>
+			<div class="billing-content">
+				<div class="title-small">Plan details</div>
+				<div class="plan-details">
+					<div class="current">
+						Current plan: <span>Free Plan 0$</span>
+					</div>
+					<p>You can own one project on the Free plan without any trial period. Only the owner of the project can upload designs on this plan.</p>
+
+					<p>If you want to let your teammates upload projects and access more projects, you can upgrade your plan:</p>
+					<a href="#" class="small-btn update-plan">Update Plan</a>
+				</div>
+				<div class="title-small">Billing Details</div>
+				<form action="" id="billing_email">
+					
+					<div class="group">
+						<input type="email">
+						<label>Billing Email</label>
+					</div>
+				</form>
+				<div class="link">We send invoices to this address</div>
+				<div class="title-small">Card Details</div>
+				<div class="current-card">
+					Current card: <span class="card">XXXX-XXX-XXXX-3055</span> <span class="card-type master">Master Card</span>
+				</div>
+				<a href="#" class="small-btn">Change Card</a>
+
+			</div>
+		</div> 
+	</div>
+	<div class="popup update-plan-popup">
+		<div class="inner-container">
+			<div class="close">✖</div>
+			<div class="quote">
+				<div class="avatar">
+					<img src="img/avatar.jpg" alt="">
+				</div>
+				<div class="texts">
+					<div class="text">
+						“Fidesys is the ultimate collaboration tool between designers and developers. It cuts meetings in half and ensures that designs are implemented perfectly, however complex”
+					</div>
+					<div class="name">Jason Holden</div>
+					<div class="position">
+						Senior Designer at <a href="#" target="_blank">Paperwalls</a>
+					</div>
+				</div>
+			</div>
+			<div class="plans">
+				<div class="item starter">
+					<div class="name">Starter</div>
+					<div class="price">
+						$ <div class="strong">free</div> / mo
+					</div>
+					<div class="projects">1 active projects</div>
+					<a href="#" class="btn">Get started</a>
+					<ul class="advantages">
+						<li>More projects</li>
+						<li>Archiving projects</li>
+					</ul>
+				</div>
+				<div class="divider"></div>
+				<div class="item business">
+					<div class="name">Business</div>
+					<div class="price">
+						$ <div class="strong">14</div> / mo
+					</div>
+					<div class="projects">7 active projects</div>
+					<a href="#" class="btn red-btn">Get started</a>
+					<ul class="advantages">
+						<li>More projects</li>
+						<li>Archiving projects</li>
+						<li>300 components per project</li>
+						<li>More versions per screen</li>
+					</ul>
+				</div>
+				<div class="divider"></div>
+				<div class="item organization">
+					<div class="name">Organization</div>
+					<div class="price">
+						$ <div class="strong">30</div> / mo
+					</div>
+					<div class="projects">Unlimited projects</div>
+					<a href="#" class="btn">Get started</a>
+					<ul class="advantages">
+						<li>Team project dashboard, letting members browse and join projects</li>
+				
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup small-popup">
+		<div class="inner-container">
+			<div class="close">✖</div>
+			<div class="title">Update Plan</div>
+			<div class="text">You can own one project on the Free plan without any trial period. Only the owner of the project can upload designs on this plan.</div>
+			<div class="buttons">
+				<a href="#" class="">Done</a>
+			</div>
+		</div>
+	</div>
+	<script
+	src="http://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+		
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

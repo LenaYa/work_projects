@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+
+
+$blue: #007AFF
+$red: #FF3344
+$text: #56595C
+
+*
+	margin: 0
+	padding: 0
+body 
+	background: #151617
+	color: #fff
+	font-family: Roboto, sans-serif
+	font-weight: 300
+	text-align: center
+	width: 100%
+	overflow-x: hidden
+	position: relative
+	.poly
+		top: 0
+		z-index: -1
+		left: 0
+		right: 0
+		position: absolute
+
+		img 
+			width: 100% 
+			height: auto
+
+
+.container 
+	width: 1052px
+	margin: 0 auto
+	@media screen and (max-width: 1051px)
+		width: 100%
+		padding-left: 15px!important
+		padding-right: 15px!important
+		box-sizing: border-box
+ul 
+	list-style: none
+	padding: 0
+img 
+	max-width: 100%
+a 
+	color: #fff 
+	text-decoration: none
+.red-slash
+	position: relative
+	padding-top: 32px 
+	&:before 
+		content: ''
+		background: $red
+		width: 30px 
+		height: 2px 
+		position: absolute
+		left: 50% 
+		margin-left: -15px 
+		top: 0
+
+.title-large 
+	font-size: 65px 
+	font-weight: 900
+	margin-bottom: 27px
+	@media screen and (max-width: 1023px)
+		font-size: 48px
+	@media screen and (max-width: 520px)
+		font-size: 38px
+.subtitle-large 
+	color: #ADAEAE
+	font-size: 26px
+	line-height: 46px
+	margin-bottom: 73px
+	@media screen and (max-width: 1023px)
+		font-size: 22px
+		line-height: 1.4
+	@media screen and (max-width: 520px)
+		font-size: 22px
+
+.subtitle
+	color: $text
+	font-size: 25px
+	line-height: 40px
+	margin-bottom: 138px
+	@media screen and (max-width: 1023px)
+		margin-bottom: 100px
+		font-size: 22px
+		line-height: 1.4
+.title-small
+	font-weight: 900
+	line-height: 47px
+	font-size: 40px
+	margin-bottom: 21px
+section 
+	position: relative
+	z-index: 5
+nav 
+	font-size: 15px
+	font-weight: 500
+	position: relative
+	z-index: 15
+	position: fixed 
+	left: 0 
+	right: 0
+	&.filled 
+		background: #151617
+	.container 	
+		padding: 38px 0
+		border-bottom: 1px solid rgba(255, 255, 255, .05) 
+		display: flex 
+		justify-content: space-between
+		align-items: center
+		@media screen and (max-width: 767px)
+			padding-top: 20px 
+			padding-bottom: 20px
+	.logo 
+		font-size: 20px
+	.links
+		@media screen and (max-width: 424px)
+			display: none
+	ul 
+		margin: 0
+		li 
+			display: inline-block
+			.login 
+				margin: 0 60px
+				@media screen and (max-width: 767px)
+					margin: 0 20px
+			.blue 
+				color: $blue
+			.signup 
+				padding: 7px 13px 
+				border-radius: 4px 
+				border: 1px solid #fff
+.start 
+	padding-top: 110px
+	margin-bottom: 86px
+	@media screen and (max-width: 1023px)
+		padding-top: 80px
+	@media screen and (max-width: 767px)
+		margin-bottom: 40px
+	.wave
+		bottom: -170px
+		z-index: -1
+		left: 0
+		right: 0
+		position: absolute
+		min-width: 1400px
+		z-index: -1
+		img 
+			width: 100% 
+			height: auto
+
+		@media screen and (max-width: 767px)
+			display: none
+	.screen
+		border-radius: 8px
+		overflow: hidden
+	a 
+		display: inline-block 
+		box-sizing: border-box
+	.btns 
+		display: flex 
+		flex-direction: column 
+		justify-content: center
+		align-items: center
+	.btn 
+		background: $blue
+		border-radius: 3px
+		padding: 18px 90px
+		margin-bottom: 30px
+		font-weight: 500
+		@media screen and (max-width: 400px)
+			padding: 18px 0 
+			width: 100%
+	.link
+		margin-bottom: 60px
+		position: relative
+		color: $blue
+		font-weight: 500
+		&:after 
+			content: ''
+			background: url(../img/index/button_arrow.svg)
+			width: 16px
+			height: 10px 
+			position: absolute 
+			right: -24px 
+			top: 5px
+	.how 
+		margin-top: 58px
+		color: $blue
+		font-size: 20px 
+		line-height: 24px
+		font-weight: 500
+		position: relative
+		&:after 
+			content: ''
+			background: url(../img/index/triangle_button.svg) no-repeat center
+			width: 12px
+			height: 20px 
+			position: absolute 
+			left: -28px 
+			top: 2px
+
+.collaborate 
+	.benefits
+		display: flex 
+		justify-content: space-around 
+		align-items: flex-start
+		margin-bottom: 157px
+		@media screen and (max-width: 699px)
+			flex-wrap: wrap
+			justify-content: space-around
+			margin-bottom: 50px
+
+		.item 
+			width: 213px
+			flex-shrink: 0
+			color: $text 
+			font-weight: 500
+			line-height: 26px
+			font-size: 16px
+			padding-top: 140px
+			background-size: 100px 100px
+			@media screen and (max-width: 699px)
+				margin-bottom: 40px
+
+			.title
+				color: #fff 
+				text-transform: uppercase
+				line-height: 15px
+				font-size: 13px
+				text-align: center
+				letter-spacing: 0.5px
+				margin-bottom: 18px
+
+			&.front 
+				background: url(../img/index/front-ends.svg) no-repeat center top
+			&.back 
+				background: url(../img/index/back-ends.svg) no-repeat center top
+			&.projects 
+				background: url(../img/index/projects.svg) no-repeat center top
+			.text 
+				color: #ADAEAE
+				font-weight: 300
+.teams 
+	margin-bottom: 257px
+	@media screen and (max-width: 767px)
+		margin-bottom: 100px
+		z-index: 6
+	&:after
+		content: ''
+		position: absolute
+		left: 0 
+		right: 0
+		top: 0 
+		bottom: 0 
+		z-index: -1
+		background: url('../img/index/backgr_red_strokes.svg') no-repeat center
+		background-position: center bottom
+		@media screen and (max-width: 767px)
+			display: none
+	.number
+		line-height: 24px
+		width: 30px
+		font-size: 20px
+		padding-bottom: 40px 
+		margin-bottom: 40px
+		position: relative
+		font-weight: 700
+		&:before 
+			content: ''
+			background: $red
+			width: 30px 
+			height: 2px 
+			position: absolute
+			left: 50% 
+			margin-left: -15px 
+			bottom: 0
+	.text 
+		color: $text 
+		font-weight: 300
+		line-height: 35px
+		font-size: 20px
+		box-sizing: border-box
+		padding-right: 70px
+		@media screen and (max-width: 767px)
+			padding-right: 0
+
+	.block 
+		width: 50%
+		text-align: left
+		height: 770px
+		display: flex 
+		flex-direction: column
+		justify-content: center
+		position: relative
+		padding-right: 96px
+		box-sizing: border-box
+		@media screen and (max-width: 767px)
+			height: auto
+			width: 100%
+			padding-right: 0
+
+	.image
+		width: 50%
+		position: relative
+		flex-shrink: 0
+		@media screen and (max-width: 767px)
+			display: none
+		&:after 	
+			position: absolute
+			height: 770px 
+			width: 1052px
+			top: 0 
+			content: ''
+			background-size: 100% auto
+			border-radius: 8px 
+			overflow: hidden
+	.first 
+		display: flex
+		justify-content: space-between
+		.image:after 
+			background: url('../img/index/screen_1.jpg') no-repeat left top
+			background-size: auto 100%
+			left: 0
+
+	.second 
+		margin-top: 120px
+		display: flex
+		justify-content: space-between
+		@media screen and (max-width: 767px)
+			text-align: right
+			.block
+				align-items: flex-end	
+				text-align: right
+				padding-right: 0
+			.number 
+				right: 0
+			.text
+				padding-right: 0
+		.image:after 
+			background: url('../img/index/screen_1.jpg') no-repeat
+			background-position: top right 96px
+			background-size: auto 100%
+			right: 0
+
+
+.partners
+	position: relative
+	z-index: 5
+	.wave
+		top: -170%
+		z-index: -1
+		left: 0
+		right: 0
+		position: absolute
+		img 
+			width: 100% 
+			height: auto
+
+	.partners-slider
+		margin-top: 90px
+		margin-bottom: 38px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		@media screen and (max-width: 1051px)
+			flex-wrap: wrap 
+			justify-content: space-around
+			a 
+				margin: 0 10px 30px
+
+	.link
+		font-weight: 300
+		line-height: 21px
+		font-size: 18px
+		color: $blue
+
+
+.quotes
+	margin-top: 87px
+	margin-bottom: 45px
+	.container 
+		position: relative
+	.slick-track 
+		display: flex 
+		align-items: flex-start
+	.slick-list 
+		overflow-x: hidden
+		width: 680px
+		margin: 0 auto
+		box-sizing: border-box
+		@media screen and (max-width: 720px)
+			width: 100%
+			padding: 0!important
+	.slider-arrow
+		position: absolute
+		top: 30%
+		left: 0 
+		width: 58px 
+		height: 58px
+		background: url('../img/index/arrow_right.svg') no-repeat center
+		transform: rotate(180deg)
+		@media screen and (max-width: 720px)
+			top: 50%
+		&.slider-next 
+			background: url('../img/index/arrow_right.svg') no-repeat center
+			left: auto
+			right: 0
+			transform: rotate(0)
+			&:hover
+				transform: rotate(180deg)
+		&:hover 
+			background: url('../img/index/arrow_left.svg') no-repeat center
+			transform: rotate(0)
+
+
+	.slick-slide 
+		display: inline-block
+		width: 680px
+		box-sizing: border-box
+		.text 
+			font-style: italic
+			font-weight: 300
+			line-height: 40px
+			font-size: 25px
+			margin-bottom: 28px
+		.avatar 
+			border-radius: 50%
+			padding: 16px
+			box-sizing: border-box
+			width: 92px 
+			height: 92px
+			background: url('../img/index/avatar_border.svg') no-repeat center top
+			background-size: 100% auto
+			margin: 0 auto 18px
+		.name 			
+			font-weight: 500
+			line-height: 20px
+			font-size: 17px
+			margin-bottom: 6px
+		.position
+			font-weight: 300
+			line-height: 20px
+			font-size: 17px
+			color: $text
+			a 
+				font-weight: 300
+				line-height: 20px
+				font-size: 17px
+				color: #E74A5A
+
+.pricing
+	margin-bottom: 73px
+	padding-top: 45px
+	.title-small
+		position: relative
+		display: inline-block
+		&:before
+			content: ''
+			position: absolute
+			width: 30px 
+			height: 2px 
+			background: $red
+			border-radius: 1px
+			left: -50px
+			top: 22px
+	.subtitle
+		margin-bottom: 114px
+	.plans 
+		display: flex
+		justify-content: space-between
+		@media screen and (max-width: 767px)
+			flex-wrap: wrap
+			justify-content: space-around
+		.divider
+			height: 330px 
+			width: 1px 
+			background: #1E2022
+			margin-top: 137px
+			@media screen and (max-width: 767px)
+				display: none
+		.item
+			width: 211px
+			padding-top: 111px
+			@media screen and (max-width: 767px)
+				margin: 0 20px 50px
+
+			.name 
+				line-height: 29px
+				font-size: 25px
+				font-weight: 700
+				margin-bottom: 10px
+			.price 
+				font-weight: 300
+				line-height: 29px
+				font-size: 25px
+				display: flex
+				align-items: flex-end
+				justify-content: center
+				height: 76px
+
+				.strong 
+					display: inline-block
+					font-weight: bold
+					margin: 0 5px 0 9px
+					line-height: 56px
+					font-size: 65px
+					height: 76px 
+					width: 76px
+					text-align: center
+					display: flex
+					align-items: flex-end
+			.projects
+				margin-top: 40px
+				font-weight: 500
+				line-height: 20px
+				margin-bottom: 40px
+				font-size: 17px
+			.btn 
+				background: #26282C
+				border-radius: 3px
+				font-weight: 500
+				line-height: 24px
+				font-size: 20px
+				color: $red 
+				padding: 13px 0 
+				width: 200px
+				margin: 49px 0
+				display: block
+				&.red-btn 
+					background: linear-gradient(14.04deg, #FF3340 0%, #F73890 100%)
+					color: #fff
+			.advantages 
+				font-weight: 300
+				line-height: 36px
+				font-size: 16px
+				color: #56595C
+
+			&.starter 
+				background: url('../img/index/cube_1.svg') no-repeat
+				background-position: center top 30px
+				.name 
+					color: #36393E
+				.price
+					.strong
+						line-height: 36px
+						font-size: 35px
+						margin-right: 0
+			&.business 
+				background: url('../img/index/cube_2.svg') no-repeat
+				background-position: center top 30px
+				.name
+					color: #FE3344
+			&.organization 
+				background: url('../img/index/cube_3.svg') no-repeat
+				background-position: center top
+				.name 
+					color: #fff
+				.advantages 
+					li 
+						font-weight: 300
+						line-height: 26px
+						font-size: 16px
+						margin-bottom: 30px
+
+.future
+	margin-bottom: 89px
+	.image
+		position: relative
+		overflow-y: hidden
+		width: 100%
+		background: url('../img/index/screens_group.png'), url('../img/index/red_bottom.svg')
+		background-repeat: no-repeat no-repeat 
+		background-position: top center, center
+		background-size: auto 100%, 100% auto
+
+		&:after 
+			content: ''
+			display: block
+			padding-top: 62%
+
+		@media screen and (max-width: 1051px)
+			display: none
+
+.glory
+	.subtitle
+		margin-bottom: 65px
+	.btns 
+		.btn 
+			width: 220px
+			margin: 0 17px 
+			display: inline-block
+			padding: 18px 0 
+			font-weight: 500
+			line-height: 24px
+			font-size: 20px
+			border-radius: 3px
+			background: #36393E
+			@media screen and (max-width: 500px)
+					margin-bottom: 30px
+
+			&.red-btn 
+				background: linear-gradient(14.04deg, #FF3340 0%, #F73890 100%)
+				img 
+					margin-left: 3px
+
+
+footer 
+	margin-top: 96px
+	font-weight: 500
+	line-height: 18px
+	font-size: 15px
+	.container
+		display: flex 
+		padding: 97px 0
+		justify-content: space-between
+		@media screen and (max-width: 600px)
+			flex-direction: column 
+			padding: 40px
+			align-items: center
+
+		ul 
+			@media screen and (max-width: 600px)
+				margin-bottom: 40px
+			li 
+				display: inline-block
+				&.terms 
+					margin: 0 70px 
+				&.fb 
+					margin: 0 60px 0 0 
+
+
+
+			
+

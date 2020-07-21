@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  height: 100%; }
+
+body {
+  background: #151617 url("../img/black_wave_bg.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% auto;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  padding-top: 118px;
+  text-align: center;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media screen and (max-width: 743px) {
+    body {
+      padding-top: 50px; } }
+  body .container {
+    width: 744px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    @media screen and (max-width: 743px) {
+      body .container {
+        width: 100%;
+        padding: 0 15px; } }
+  body .title {
+    font-weight: 900;
+    line-height: 53px;
+    font-size: 45px;
+    margin-bottom: 41px; }
+    @media screen and (max-width: 743px) {
+      body .title {
+        font-size: 36px; } }
+  body .subtitle {
+    font-weight: 300;
+    margin-bottom: 100px;
+    line-height: 40px;
+    font-size: 25px;
+    text-align: center;
+    color: #7D8185; }
+    @media screen and (max-width: 743px) {
+      body .subtitle {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 50px; } }
+  body form {
+    width: 380px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    @media screen and (max-width: 409px) {
+      body form {
+        width: 100%; } }
+    body form input {
+      width: 100%;
+      border: none;
+      background: transparent;
+      outline: none;
+      border-bottom: 1px solid #222425;
+      padding: 14px 0;
+      line-height: 16px;
+      font-size: 14px;
+      color: #fff;
+      text-align: left; }
+    body form input.error {
+      border-bottom: 1px solid red; }
+      body form input.error::-webkit-input-placeholder {
+        color: #56595C; }
+      body form input.error:-ms-input-placeholder {
+        color: #56595C; }
+      body form input.error::-moz-placeholder {
+        color: #56595C;
+        opacity: 1; }
+      body form input.error:-moz-placeholder {
+        color: #56595C;
+        opacity: 1; }
+    body form label.error {
+      display: none !important; }
+    body form button {
+      width: 100%;
+      background: #56595C;
+      border-radius: 4px;
+      color: #fff;
+      font-weight: 500;
+      line-height: 20px;
+      font-size: 17px;
+      padding: 20px 0;
+      border: none;
+      outline: none;
+      margin: 50px 0 40px;
+      cursor: default; }
+      body form button.active {
+        background: #007AFF;
+        cursor: pointer; }
+    body form .password-field {
+      position: relative; }
+      body form .password-field .checkmark-show {
+        position: absolute;
+        right: 0;
+        line-height: 16px;
+        font-size: 14px;
+        color: #56595C;
+        cursor: pointer;
+        top: 15px; }
+        body form .password-field .checkmark-show:before {
+          content: '';
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          border: 1px solid #222425;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          border-radius: 3px;
+          left: -21px; }
+        body form .password-field .checkmark-show.checked:after {
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 7px;
+          border-left: 1px solid #ddd;
+          border-bottom: 1px solid #ddd;
+          left: -18px;
+          top: 1px;
+          border-radius: 0 0 0 3px;
+          -webkit-transform: rotate(-45deg) scale(1, 0.7);
+          -ms-transform: rotate(-45deg) scale(1, 0.7);
+          transform: rotate(-45deg) scale(1, 0.7); }
+  body p {
+    margin-bottom: 25px;
+    font-weight: 300;
+    line-height: 16px;
+    font-size: 14px; }
+    body p a {
+      color: #007AFF;
+      text-decoration: none; }

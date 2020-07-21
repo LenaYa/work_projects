@@ -1,0 +1,1507 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script&subset=cyrillic')
+
+@font-face
+  font-family: B52
+  src: url("../fonts/b52.ttf") format('truetype'), url("../fonts/b52.eot") format('eot'), url("../fonts/b52.woff") format('woff')
+
+*
+  margin: 0
+  padding: 0
+body, html
+  height: 100%
+  width: 100%
+  overflow-x: hidden
+.map-container
+  width: 100%
+  background: url("../images/map-bg.jpg") no-repeat
+  background-position: center top
+  min-height: 100%
+  background-size: cover
+  .map-header
+    background: #b54319
+    width: 100%
+    font-family: B52, serif
+    font-size: 48px
+    @media screen and (max-width: 1169px)
+      font-size: 30px
+    @media screen and (max-width: 767px)
+      font-size: 20px
+    .header-container
+      width: 1170px
+      height: 100%
+      margin: 0 auto
+      text-transform: uppercase
+      color: #fff
+      padding: 20px 0
+      text-align: center
+      position: relative
+      @media screen and (max-width: 1169px)
+        width: 100%
+        padding: 10px 0
+      &:before
+        content: ''
+        position: absolute
+        width: 200px
+        height: 257px
+        z-index: 10
+        background: url("../images/fort-logo.png") no-repeat
+        background-position: center top
+        background-size: 100% auto
+        left: 158px
+        top: 0
+        @media screen and (max-width: 1169px)
+          width: 150px
+          height: 184px
+          left: 60px
+        @media screen and (max-width: 767px)
+          width: 90px
+          left: 1%
+          height: 107px
+      .title
+        @media screen and (max-width: 767px)
+          padding-left: 60px
+          box-sizing: border-box
+  .slogan
+    position: absolute
+    left: 0
+    bottom: -120px
+    width: 147%
+    text-align: center
+    font-size: 50px
+    color: #fff
+    text-shadow: 3px 3px 2px rgba(0,0,0,.5)
+    span
+      color: #f78f21
+
+    @media screen and (max-width: 1169px)
+      bottom: -21%
+      width: 100%
+      font-size: 35px
+
+
+  .map-content
+    width: 1170px
+    height: 100%
+    min-height: 1000px
+    margin: 0 auto
+    background: url("../images/paper.png") no-repeat center top
+    background-size: 100% auto
+    position: relative
+    margin-top: -50px
+    @media screen and (max-width: 1169px)
+      background: url("../images/paper-rotated.png") no-repeat center top
+      width: 100%
+      background-size: 100% auto
+      margin-top: 0
+    @media screen and (max-width: 767px)
+      background: url("../images/paper-cropped.png") no-repeat center top
+      background-size: 100% auto
+    .map-main
+      top: 170px
+      left: 185px
+      width: 555px
+      height: 537px
+      //background: url("../images/map-wire.png") no-repeat center 100%
+      position: relative
+      z-index: 0
+
+      @media screen and (max-width: 1169px)
+        width: 100%
+        top: 0
+        left: 0
+        height: auto
+        z-index: 3
+      img.wire
+        width: 100%
+        height: auto
+        @media screen and (max-width: 1169px)
+          width: 62%
+          display: block
+          margin: 0 auto
+          padding-top: 16%
+        @media screen and (max-width: 767px)
+          width: 85%
+          padding-top: 23%
+      .shape
+        position: absolute
+        background: url("../images/lock.png") no-repeat center
+        background-size: 100% auto
+        width: 50px
+        height: 50px
+        display: block
+        @media screen and (max-width: 767px)
+          width: 30px
+          height: 30px
+        a
+          position: absolute
+          left: 0
+          right: 0
+          top: 0
+          bottom: 0
+          outline: none
+          z-index: 50
+        .tooltip
+          display: none
+          position: absolute
+          padding: 5px 10px
+          top: -40px
+          left: 30px
+          background: url("../images/tooltip_bg.png") no-repeat center
+          background-size: 100% 100%
+          color: #333
+          font-size: 14px
+          text-align: center
+          opacity: 1
+          .title
+            text-transform: uppercase
+            margin-bottom: 5px
+            font-weight: 700
+            font-family: B52, serif
+          //&:before
+          //  content: ''
+          //  width: 0
+          //  height: 0
+          //  position: absolute
+          //  border-style: solid
+          //  border-width: 10px 10px 0 0
+          //  border-color: antiquewhite transparent transparent transparent
+          //  left: 0
+          //  bottom: -10px
+        &:hover .tooltip
+          display: block
+        &:before
+          z-index: -1
+          position: absolute
+          content: ''
+          display: none
+          background-size: 100% 100%
+        &:hover:before
+          display: block
+          opacity: .5
+          @media screen and (max-width: 1169px)
+            display: none
+        &.shape-1
+          left: 42px
+          top: 37px
+          @media screen and (max-width: 1169px)
+            left: 26%
+            top: 29%
+          @media screen and (max-width: 767px)
+            left: 17%
+            top: 31%
+          &:before
+            width: 125px
+            height: 96px
+            top: 4px
+            left: -25px
+            background: url("../images/active-1.png") no-repeat center
+        &.shape-2
+          left: 220px
+          top: 22px
+          @media screen and (max-width: 1169px)
+            left: 45%
+            top: 25%
+          @media screen and (max-width: 767px)
+            left: 40%
+          &:before
+            width: 203px
+            height: 141px
+            top: -13px
+            left: -125px
+            background: url("../images/active-2.png") no-repeat center
+        &.shape-3
+          left: 101px
+          top: 190px
+          @media screen and (max-width: 1169px)
+            left: 30%
+            top: 48%
+          @media screen and (max-width: 767px)
+            left: 21%
+          &:before
+            width: 236px
+            height: 143px
+            top: -64px
+            left: -60px
+            background: url("../images/active-3.png") no-repeat center
+        &.shape-4
+          left: 66px
+          top: 258px
+          @media screen and (max-width: 1169px)
+            left: 25%
+            top: 59%
+          @media screen and (max-width: 767px)
+            left: 15%
+          &:before
+            width: 176px
+            height: 95px
+            top: -26px
+            left: -57px
+            background: url("../images/active-4.png") no-repeat center
+        &.shape-5
+          left: 171px
+          top: 314px
+          @media screen and (max-width: 1169px)
+            left: 37%
+            top: 66%
+          @media screen and (max-width: 767px)
+            left: 30%
+          &:before
+            width: 200px
+            height: 147px
+            top: -51px
+            left: -69px
+            background: url("../images/active-5.png") no-repeat center
+        &.shape-6
+          left: 119px
+          top: 437px
+          @media screen and (max-width: 1169px)
+            left: 32%
+            top: 84%
+          @media screen and (max-width: 767px)
+            left: 24%
+          &:before
+            width: 141px
+            height: 150px
+            top: -58px
+            left: -46px
+            background: url("../images/active-6.png") no-repeat center
+        &.shape-7
+          left: 256px
+          top: 382px
+          @media screen and (max-width: 1169px)
+            left: 49%
+            top: 76%
+          @media screen and (max-width: 767px)
+            left: 42%
+          &:before
+            width: 213px
+            height: 134px
+            top: -59px
+            left: -44px
+            background: url("../images/active-7.png") no-repeat center
+        &.shape-8
+          left: 310px
+          top: 298px
+          @media screen and (max-width: 1169px)
+            left: 54%
+            top: 64%
+          &:before
+            width: 138px
+            height: 106px
+            top: -49px
+            left: -51px
+            background: url("../images/active-8.png") no-repeat center
+        &.shape-9
+          left: 424px
+          top: 349px
+          @media screen and (max-width: 1169px)
+            left: 62%
+            top: 72%
+          @media screen and (max-width: 767px)
+            left: 65%
+          &:before
+            width: 222px
+            height: 86px
+            top: -27px
+            left: -98px
+            background: url("../images/active-9.png") no-repeat center
+        &.shape-10
+          left: 298px
+          top: 450px
+          @media screen and (max-width: 1169px)
+            left: 52%
+            top: 88%
+          &:before
+            width: 123px
+            height: 73px
+            top: 3px
+            left: -63px
+            background: url("../images/active-10.png") no-repeat center
+
+        &.unlocked
+          background: none
+          &:after
+            content: ''
+            position: absolute
+            width: 100px
+            height: 87px
+            background: url("../images/red_flag.png") no-repeat center
+            background-size: 100%
+            left: 0
+            bottom: 0
+            @media screen and (max-width: 767px)
+              width: 64px
+          &:hover .tooltip
+            display: none
+        &.completed
+          background: none
+          &:after
+            content: ''
+            position: absolute
+            width: 100px
+            height: 89px
+            background: url("../images/yellow_flag.png") no-repeat center
+            background-size: 100% auto
+            left: 0
+            bottom: 0
+            @media screen and (max-width: 767px)
+              width: 78px
+          &:before
+            display: block
+
+            @media screen and (max-width: 1169px)
+              display: none
+          &:hover
+            .tooltip
+              display: none
+            &:before
+              opacity: 1
+
+    .map-keys
+      position: absolute
+      top: 10px
+      right: -60%
+      width: 100%
+      height: 145px
+      @media screen and (max-width: 1169px)
+        top: 21%
+        right: 18%
+        width: 28%
+        height: 25%
+      @media screen and (max-width: 767px)
+        right: 0
+        width: 46%
+      .key
+        float: left
+        margin-right: 10px
+        width: 8%
+        opacity: .4
+        height: 100%
+        @media screen and (max-width: 1169px)
+          width: 14%
+          height: 70%
+        @media screen and (max-width: 767px)
+          margin-right: 6px
+
+        &.available
+          opacity: 1
+      $class-slug: key !default
+
+      @for $i from 1 through 10
+        .#{$class-slug}-#{$i}
+          background: url("../images/key#{$i}-empty.png") no-repeat center
+          background-size: 100% auto
+          &.earned
+            opacity: 1
+            background: url("../images/key#{$i}.png") no-repeat center
+            background-size: 100% auto
+    .map-start-link
+      position: absolute
+      right: -237px
+      bottom: 0
+      width: 100px
+      height: 100px
+      color: #333
+      font-size: 16px
+      text-align: center
+      text-transform: uppercase
+      font-weight: 700
+      text-decoration: none
+      z-index: 5
+
+      @media screen and (max-width: 1169px)
+        bottom: -11%
+        right: 26%
+        z-index: 0
+      @media screen and (max-width: 767px)
+        bottom: -33%
+        left: 0
+        right: 0
+        width: auto
+        height: auto
+        font-size: 14px
+        &:before
+          display: none
+      &:hover
+        text-decoration: none
+
+      &:before
+        content: ''
+        width: 150px
+        height: 141px
+        background: url("../images/glass.png") no-repeat
+        background-size: 100%
+        position: absolute
+        left: 0
+        top: -31px
+        z-index: -1
+
+      &:after
+        content: ''
+        width: 400px
+        height: 380px
+        background: url("../images/compass.png") no-repeat
+        background-size: 100%
+        position: absolute
+        left: -229px
+        top: -239px
+        z-index: -2
+        opacity: .4
+        @media screen and (max-width: 1169px)
+          display: none
+
+
+.fort-quiz-page
+  background: #ffd857
+  width: 100%
+  min-height: 100%
+  .fort-container
+    width: 1170px
+    margin: 0 auto
+    height: 100%
+    box-sizing: border-box
+    @media screen and (max-width: 1169px)
+      width: 100%
+  .back-btn
+    padding: 4px 10px
+    color: #333
+    text-decoration: none
+    background: #fff
+    border-radius: 4px
+    margin: 10px 0
+    display: block
+    width: 150px
+    text-align: center
+  .quiz-white-container
+    background: #fff
+    padding: 10px 20px
+    margin-bottom: 20px
+  .quiz-legend
+    h4
+      font-size: 20px
+      color: #b54319
+      text-transform: uppercase
+      margin-bottom: 10px
+    ul
+      list-style: none
+      font-size: 16px
+
+      li
+        padding-left: 20px
+        position: relative
+        margin-bottom: 5px
+        box-sizing: border-box
+        a
+          color: #b54319
+        &:before
+          content: ''
+          position: absolute
+          background: #b54319
+          width: 10px
+          height: 10px
+          border-radius: 50%
+          left: 0
+          top: 5px
+  .fort-header
+    background: #b54319
+    width: 100%
+    font-family: B52, serif
+    font-size: 48px
+    text-transform: uppercase
+    position: relative
+    color: #fff
+    @media screen and (max-width: 500px)
+      font-size: 30px
+      padding-left: 20%
+      box-sizing: border-box
+    .fort-container
+      padding: 20px 0
+      position: relative
+      padding-left: 195px
+
+      @media screen and (max-width: 1023px)
+        padding-left: 15%
+        text-align: center
+
+        @media screen and (max-width: 500px)
+          padding-left: 0
+      &:before
+        content: ''
+        position: absolute
+        width: 200px
+        height: 418px
+        z-index: 10
+        background: url("../images/fort-logo-first.png") no-repeat center
+        background-size: 100% auto
+        background-position: top center
+        left: 0
+        top: 0
+        @media screen and (max-width: 1023px)
+          width: 15%
+        @media screen and (max-width: 500px)
+          width: 23%
+          left: -23%
+
+  .fort-quiz
+    .fort-container
+      box-sizing: border-box
+      padding-left: 195px
+      @media screen and (max-width: 1023px)
+        padding-left: 15px
+        padding-right: 15px
+      h3
+        font-size: 24px
+        text-transform: uppercase
+        font-weight: 700
+      p
+        font-size: 18px
+      .first-quiz-container
+        margin-top: 30px
+        margin-bottom: 40px
+
+        .first-quiz-card
+          width: 25%
+          height: 261px
+          background: url("../images/first_paper.png") no-repeat top left
+          background-size: 100% auto
+          float: left
+          box-sizing: border-box
+          padding: 40px 28px 0 10px
+          font-size: 17px
+          line-height: 1.5
+          text-align: center
+          cursor: pointer
+
+          @media screen and (max-width: 1169px)
+            width: 33%
+          @media screen and (max-width: 767px)
+            width: 50%
+            background-position: top center
+            background-size: 100% auto
+            min-height: 185px
+            padding: 30px
+            padding-right: 45px
+            padding-top: 50px
+          @media screen and (max-width: 555px)
+            margin: 0 auto 10px
+            line-height: 1.1
+            background-position: top center
+            background-size: 100% 100%
+            min-height: 0
+            padding: 7px
+            padding-right: 21px
+            padding-top: 22px
+            font-size: 14px
+            height: 202px
+
+        .clear
+          clear: both
+      .first-quiz-button
+        text-align: center
+        position: relative
+        min-height: 480px
+        background: url("../images/first_btn_bg.png") no-repeat center top
+        box-sizing: border-box
+        padding-top: 20px
+
+        button
+          border: none
+          background: none
+          font-family: B52, serif
+          font-size: 30px
+          cursor: pointer
+          outline: none
+
+.fort-first
+
+  .fort-quiz
+    .fort-container
+      padding-top: 215px
+      background: url("../images/banner_first.png") no-repeat top right
+
+
+.fort-second
+  background: #d4d1ee
+  .fort-header
+    background: #9a8cdb
+    font-size: 30px
+    .fort-container
+      &:before
+        background: url("../images/fort-logo-second.png") no-repeat center top
+        background-size: 100% auto
+  .fort-second-top
+    background: #f5c26f
+    padding-top: 20px
+    padding-bottom: 20px
+    .fort-container
+
+      @media screen and (max-width: 1023px)
+        padding-left: 15%
+      @media screen and (max-width: 434px)
+        padding-left: 15px
+    .title
+      font-size: 18px
+      font-weight: 700
+      margin-bottom: 20px
+    ul.line
+      display: table-row
+      @media screen and (max-width: 540px)
+        display: block
+      &>li
+        display: table-cell
+        vertical-align: middle
+        width: 30%
+        text-align: center
+        @media screen and (max-width: 540px)
+          display: block
+          width: 80%
+          margin: 0 auto 10px
+        @media screen and (max-width: 460px)
+          width: 100%
+
+        &:first-of-type
+          font-size: 20px
+          font-weight: 700
+        a
+          color: #000
+          padding: 5px 20px
+          border-radius: 4px
+          background: #fff
+          text-decoration: none
+        ul
+          text-align: left
+          list-style: none
+          li
+            padding-left: 13px
+            position: relative
+            margin-bottom: 10px
+            &:before
+              content: ''
+              position: absolute
+              background: #9a8cdb
+              width: 8px
+              height: 8px
+              border-radius: 50%
+              left: 0
+              top: 5px
+
+  .fort-second-bottom
+    padding-top: 20px
+    .side
+      display: inline-block
+      box-sizing: border-box
+      @media screen and (max-width: 900px)
+        display: block
+      &.left
+        width: 50%
+        padding-top: 500px
+        background: url("../images/second-bg.png") no-repeat
+        background-size: 100% auto
+        background-position: center 50px
+        @media screen and (max-width: 900px)
+          width: 100%
+        @media screen and (max-width: 700px)
+          padding-top: 30px
+          background: none
+        form
+          text-align: center
+          width: 100%
+          .todo
+            width: 40%
+            margin-right: 10px
+            display: inline-block
+            text-align: center
+            padding: 5px 0
+            border-radius: 4px
+            background: #fff
+            @media screen and (max-width: 460px)
+              width: 100%
+
+          input
+            width: 40%
+            padding: 7px
+            box-sizing: border-box
+            border-radius: 4px
+            text-align: center
+            background: #f6931e
+            border: 0
+            outline: none
+            @media screen and (max-width: 460px)
+              width: 49%
+          button
+            width: 40%
+            margin: 10px auto
+            padding: 7px
+            border: 0
+            outline: none
+            background: #7b6ebe
+            color: #fff
+            box-sizing: border-box
+            border-radius: 4px
+            font-weight: 700
+            @media screen and (max-width: 460px)
+              width: 49%
+      &.right
+        width: 49%
+        @media screen and (max-width: 900px)
+          width: 100%
+        h4
+          font-weight: 700
+          font-size: 18px
+          margin-bottom: 10px
+          position: relative
+          &:before
+            content: ''
+            position: absolute
+            width: 30px
+            height: 30px
+            left: -40px
+            top: 0
+            background: url("../images/plus.png") no-repeat
+            background-size: 100% auto
+          span
+            display: block
+            font-weight: 300
+        .viol-title
+          font-weight: 700
+          margin-bottom: 7px
+          color: #796bc0
+          font-size: 18px
+        .dark
+          font-weight: 700
+
+        ul
+          text-align: left
+          list-style: none
+          margin-bottom: 30px
+          li
+            padding-left: 13px
+            position: relative
+            margin-bottom: 10px
+            &:before
+              content: ''
+              position: absolute
+              background: #f6931e
+              width: 8px
+              height: 8px
+              border-radius: 50%
+              left: 0
+              top: 5px
+
+
+
+
+
+
+
+.fort-third
+  background: #8cd7d2
+  .fort-header
+    background: #f7c669
+    font-size: 30px
+    .fort-container
+      &:before
+        background: url("../images/fort-logo-third.png") no-repeat center top
+        background-size: 100% auto
+  .fort-third-top
+    background: #00a69c
+    padding-top: 20px
+    padding-bottom: 20px
+    color: #fff
+    .fort-container
+
+      @media screen and (max-width: 1023px)
+        padding-left: 15%
+      @media screen and (max-width: 434px)
+        padding-left: 15px
+    .title
+      font-size: 18px
+      font-weight: 700
+      margin-bottom: 20px
+    ul.line
+      display: table-row
+      @media screen and (max-width: 540px)
+        display: block
+      .line-title
+        color: #f6931e
+      &>li
+        display: table-cell
+        vertical-align: middle
+        width: 30%
+        text-align: left
+        @media screen and (max-width: 540px)
+          display: block
+          width: 80%
+          margin: 0 auto 10px
+          text-align: center
+        @media screen and (max-width: 460px)
+          width: 100%
+
+        &:first-of-type
+          font-size: 20px
+          font-weight: 700
+          width: 15%
+          @media screen and (max-width: 923px)
+            width: 25%
+        &:nth-of-type(2)
+          width: 50%
+          @media screen and (max-width: 540px)
+            width: 80%
+        &:nth-of-type(3)
+          @media screen and (max-width: 540px)
+            margin-top: 15px
+        a
+          color: #000
+          padding: 5px 20px
+          border-radius: 4px
+          background: #fff
+          text-decoration: none
+        ul
+          text-align: left
+          list-style: none
+          li
+            padding-left: 13px
+            position: relative
+            margin-bottom: 10px
+            &:before
+              content: ''
+              position: absolute
+              background: #9a8cdb
+              width: 8px
+              height: 8px
+              border-radius: 50%
+              left: 0
+              top: 5px
+
+  .fort-third-bottom
+    padding-top: 20px
+    .side
+      display: inline-block
+      box-sizing: border-box
+      @media screen and (max-width: 900px)
+        display: block
+      &.left
+        width: 49%
+        @media screen and (max-width: 900px)
+          width: 100%
+        h4
+          font-weight: 700
+          font-size: 22px
+          margin-bottom: 10px
+          position: relative
+        ul
+          text-align: left
+          list-style: none
+          margin-bottom: 30px
+          li
+            padding-left: 20px
+            position: relative
+            margin-bottom: 10px
+            a
+              color: #000
+              font-size: 18px
+
+            &:before
+              content: ''
+              position: absolute
+              background: #fff
+              width: 10px
+              height: 10px
+              border-radius: 50%
+              left: 0
+              top: 5px
+
+
+      &.right
+        width: 50%
+        padding-top: 340px
+        background: url("../images/third-bg.png") no-repeat
+        background-size: 100% auto
+        background-position: center 50px
+        @media screen and (max-width: 900px)
+          width: 100%
+        @media screen and (max-width: 700px)
+          padding-top: 30px
+          background: none
+        form
+          text-align: center
+          width: 100%
+          .todo
+            width: 40%
+            margin-right: 10px
+            display: inline-block
+            text-align: center
+            padding: 5px 0
+            border-radius: 4px
+            background: #fff
+            @media screen and (max-width: 460px)
+              width: 100%
+
+          input
+            width: 40%
+            padding: 7px
+            box-sizing: border-box
+            border-radius: 4px
+            text-align: center
+            background: #f6931e
+            border: 0
+            outline: none
+            @media screen and (max-width: 460px)
+              width: 49%
+          button
+            width: 40%
+            margin: 10px auto
+            padding: 7px
+            border: 0
+            outline: none
+            background: #00a69c
+            color: #fff
+            box-sizing: border-box
+            border-radius: 4px
+            font-weight: 700
+            @media screen and (max-width: 460px)
+              width: 49%
+
+
+
+
+
+.fort-fourth
+  background: #e0e1e3
+  .quiz-legend
+    padding-left: 286px
+    background: url("../images/four-small-bg.png") no-repeat
+    background-position: left 50px center
+    background-size: auto 100%
+    h4
+      font-size: 20px
+      text-transform: uppercase
+      margin-bottom: 10px
+      color: #000
+    ul
+      list-style: none
+      font-size: 16px
+
+      li
+        padding-left: 20px
+        position: relative
+        margin-bottom: 5px
+        box-sizing: border-box
+        a
+          color: #009345
+        &:before
+          content: ''
+          position: absolute
+          background: #8cc540
+          width: 10px
+          height: 10px
+          border-radius: 50%
+          left: 0
+          top: 5px
+    @media screen and (max-width: 814px)
+      background-position: left center
+    @media screen and (max-width: 709px)
+      background-size: 170px auto
+      padding-left: 230px
+    @media screen and (max-width: 600px)
+      padding-left: 200px
+    @media screen and (max-width: 489px)
+      padding-left: 0
+      background: none
+  .fort-header
+    background: #bcbdc1
+    width: 100%
+    font-family: B52, serif
+    font-size: 48px
+    text-transform: uppercase
+    position: relative
+    color: #fff
+    @media screen and (max-width: 500px)
+      font-size: 30px
+      padding-left: 20%
+      box-sizing: border-box
+    .fort-container
+      padding: 20px 0
+      position: relative
+      padding-left: 195px
+
+      @media screen and (max-width: 1023px)
+        padding-left: 15%
+        text-align: center
+
+        @media screen and (max-width: 500px)
+          padding-left: 0
+      &:before
+        content: ''
+        position: absolute
+        width: 200px
+        height: 418px
+        z-index: 10
+        background: url("../images/fort-logo-fourth.png") no-repeat center
+        background-size: 100% auto
+        background-position: top center
+        left: 0
+        top: 0
+        @media screen and (max-width: 1023px)
+          width: 15%
+        @media screen and (max-width: 500px)
+          width: 23%
+          left: -23%
+
+  .fort-quiz
+    .fort-fourth-top
+      background: #8cc540
+      padding-top: 20px
+      padding-bottom: 20px
+      color: #333
+      margin-bottom: 20px
+      .fort-container
+
+        @media screen and (max-width: 1023px)
+          padding-left: 15%
+        @media screen and (max-width: 434px)
+          padding-left: 15px
+      .title
+        font-size: 18px
+        font-weight: 700
+        margin-bottom: 20px
+      ul.line
+        display: table-row
+        font-size: 20px
+        @media screen and (max-width: 540px)
+          display: block
+        .line-title
+          color: #f6931e
+        &>li
+          display: table-cell
+          vertical-align: middle
+          width: 30%
+          text-align: left
+          @media screen and (max-width: 656px)
+            display: block
+            width: 80%
+            margin: 0 auto 10px
+            text-align: center
+          @media screen and (max-width: 460px)
+            width: 100%
+
+          &:first-of-type
+            font-size: 24px
+            font-weight: 700
+            width: 25%
+
+            @media screen and (max-width: 656px)
+              width: 100%
+          &:nth-of-type(2)
+            width: 75%
+
+            @media screen and (max-width: 540px)
+              width: 80%
+
+          a
+            color: #000
+            padding: 5px 20px
+            border-radius: 4px
+            background: #fff
+            font-size: 16px
+            text-decoration: none
+          ul
+            text-align: left
+            list-style: none
+            li
+              padding-left: 13px
+              position: relative
+              margin-bottom: 10px
+              &:before
+                content: ''
+                position: absolute
+                background: #9a8cdb
+                width: 8px
+                height: 8px
+                border-radius: 50%
+                left: 0
+                top: 5px
+    .fort-container
+      box-sizing: border-box
+      padding-left: 195px
+      @media screen and (max-width: 1023px)
+        padding-left: 15px
+        padding-right: 15px
+      h3
+        font-size: 24px
+        text-transform: uppercase
+        font-weight: 700
+      p
+        font-size: 18px
+      .fourth-quiz-container
+        margin-top: 50px
+        margin-bottom: 40px
+
+        .fourth-quiz-card
+          width: 170px
+          margin-right: 25px
+          margin-bottom: 35px
+          height: 170px
+          background: transparent
+          background-size: 100% auto
+          float: left
+          box-sizing: border-box
+          padding: 20px
+          z-index: 1
+          font-size: 16px
+          line-height: 1.4
+          text-align: center
+          cursor: pointer
+          position: relative
+          box-shadow: 10px 10px 10px rgba(0,0,0,.3)
+          &:after
+            content: ''
+            position: absolute
+            width: 30px
+            height: 60px
+            background: url("../images/pin.png") no-repeat center top
+            background-size: 100% auto
+            top: -30px
+            left: 50%
+          input
+            opacity: 0
+          .selected
+            position: absolute
+            background: #fff
+            z-index: -1
+            left: 0
+            right: 0
+            bottom: 0
+            top: 0
+          input:checked ~ .selected
+            background: #c9eab5
+          @media screen and (max-width: 1169px)
+            width: 20%
+
+          @media screen and (max-width: 806px)
+            width: 22%
+            margin-right: 15px
+
+          @media screen and (max-width: 729px)
+            width: 30%
+            margin-right: 20px
+          @media screen and (max-width: 629px)
+            margin-right: 10px
+
+
+
+          @media screen and (max-width: 555px)
+            line-height: 1.1
+            padding: 15px
+            font-size: 14px
+            height: 130px
+          @media screen and (max-width: 460px)
+            width: 47%
+          @media screen and (max-width: 362px)
+            width: 44%
+            height: 140px
+
+
+        .clear
+          clear: both
+      .fourth-quiz-button
+        text-align: center
+        position: relative
+        min-height: 343px
+        background: url("../images/fourth_btn_bg.png") no-repeat right top
+        box-sizing: border-box
+        background-size: auto 332px
+        padding-top: 46px
+
+        button
+          border: none
+          background: none
+          font-size: 21px
+          cursor: pointer
+          outline: none
+        @media screen and (max-width: 1162px)
+          background: none
+          min-height: 100px
+          button
+            background: #8cc540
+            padding: 10px 20px
+            border-radius: 4px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fort-modal
+  .modal-dialog
+    width: 700px
+    padding: 30px 70px
+    background: #ffd857
+    box-sizing: border-box
+    @media screen and (max-width: 700px)
+      width: 100%
+      padding: 30px 15px
+    .modal-content
+      background-size: 100% auto
+      @media screen and (max-width: 700px)
+        background: none
+      .modal-title
+        text-align: center
+        font-family: B52, serif
+        font-size: 26px
+        width: 90%
+        margin: 0 auto
+      .fort-modal-advice
+        margin-top: 260px
+        background: #fff4ce
+        padding: 15px
+        @media screen and (max-width: 700px)
+          margin-top: 30px
+        h4
+          font-weight: 700
+          font-size: 20px
+          margin-bottom: 20px
+          text-transform: uppercase
+        ul
+          list-style: none
+          li
+            padding-left: 13px
+            position: relative
+            margin-bottom: 10px
+            a
+              color: #b54319
+            &:before
+              content: ''
+              position: absolute
+              background: #f6931e
+              width: 8px
+              height: 8px
+              border-radius: 50%
+              left: 0
+              top: 5px
+
+      .fort-modal-close
+        width: 150px
+        height: 50px
+        background: url("../images/fort-modal-btn.png") no-repeat center
+        background-size: 100% auto
+        cursor: pointer
+        margin: 30px auto
+
+.fort-no-modal
+  .modal-content
+    background: url("../images/no-modal-bg.png") no-repeat top center
+.fort-yes-modal
+  .modal-dialog
+    padding: 30px
+    .modal-content
+      background: url("../images/yes-modal-bg.png") no-repeat top center
+      background-size: 100% auto
+      @media screen and (max-width: 700px)
+        background: none
+      .modal-title
+        padding-top: 100px
+        font-size: 18px
+        @media screen and (max-width: 700px)
+          padding-top: 0
+      .modal-body
+        margin-top: 250px
+        @media screen and (max-width: 700px)
+          margin-top: 30px
+
+
+
+
+
+.start-page
+  .map-header
+    .header-container
+      &:before
+        left: 15px
+        @media screen and (max-width: 500px)
+          left: 5px
+  .map-content
+    margin-top: 0
+    background: none
+  .top-part
+    display: table-row
+    @media screen and (max-width: 767px)
+      display: block
+    .left
+      display: table-cell
+      background: url('../images/start-left-bg.png') repeat-y center top
+      width: 205px
+      padding: 160px 20px 50px
+      box-sizing: border-box
+      font-size: 16px
+      line-height: 1.3
+      color: #fff
+      vertical-align: top
+      font-weight: 700
+      @media screen and (max-width: 767px)
+        display: block
+        padding-top: 50px
+      .orange
+        color: #f9941e
+        margin-top: 20px
+      @media screen and (max-width: 767px)
+        width: 100%
+        background-size: 100%
+    .right
+      background: url("../images/start-map.png") no-repeat center top
+      display: table-cell
+      width: 960px
+      text-align: right
+      @media screen and (max-width: 767px)
+        display: block
+        background: none
+        width: 100%
+        text-align: center
+      .top
+        display: inline-block
+        width: 300px
+        margin-top: 100px
+        margin-right: 100px
+        text-align: center
+        @media screen and (max-width: 767px)
+          margin: -20px auto 10px
+        .text-paper
+          width: 300px
+          text-align: center
+          height: 300px
+          padding-top: 55px
+          box-sizing: border-box
+          background: #fff
+          background: url("../images/start-paper.png") no-repeat center top
+          background-size: 100% 100%
+          box-shadow: -10px 10px 10px 0 rgba(0,0,0,.3)
+
+          .title
+            font-family: B52, serif
+            font-size: 20px
+            margin-bottom: 10px
+          .text
+            font-family: B52, serif
+            font-size: 14px
+            margin-bottom: 10px
+            line-height: 1.3
+          .script
+            font-family: 'Bad Script', cursive
+            font-size: 18px
+        .main-link
+          font-size: 14px
+          text-transform: uppercase
+          font-weight: 700
+          text-decoration: none
+          padding-top: 85px
+          text-align: center
+          display: block
+          margin-top: 47px
+          box-sizing: border-box
+          background: url(../images/play_btn.png) no-repeat top center
+          background-size: 60px auto
+          margin-left: 30px
+          color: #000
+          outline: none
+          background-position-y: 10px
+          span
+            color: #c65f39
+          &:hover
+            background: url(../images/play_btn_hover.png) no-repeat top center
+            background-size: 80px auto
+            background-position-y: 0
+          @media screen and (max-width: 767px)
+            margin: -20px auto 0
+            font-size: 20px
+            text-shadow: 2px 2px 5px rgba(0,0,0,.8)
+            color: #fff
+            span
+              color: #f9941e
+
+      .bottom
+        .slogan
+          width: 100%
+          bottom: -10px
+          position: relative
+        .banner
+          width: 100%
+          height: 170px
+          background: url("../images/banner.png") no-repeat center
+          background-size: auto 100%
+          margin-top: 20px
+          @media screen and (max-width: 538px)
+            background-size: 100% auto
+
+
+  .rules-container
+    background: antiquewhite
+    padding: 30px 40px
+    margin-top: 50px
+    font-size: 16px
+    margin-bottom: 50px
+    @media screen and (max-width: 538px)
+      padding: 15px
+    h4
+      font-size: 20px
+      margin: 20px 0 10px
+    p.strong
+      font-weight: 700
+      margin-bottom: 5px
+    ol
+      list-style: decimal
+      li
+        margin-left: 15px
+        margin-bottom: 5px
+    ul
+      list-style: disc
+      li
+        margin-left: 15px
+        margin-top: 5px
