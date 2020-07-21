@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CityBattle</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+</head>
+<body>
+	<div class="button-line">
+		<div class="btn"><a href="" class="download">Играть бесплатно</a></div>
+	</div>
+	<div class="first-screen">
+		<div class="video-wrapper">
+			<video autoplay muted loop class="topVideo">
+				<source src="video/header_video.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="container">
+			<div class="logo"></div>
+			<div class="play-trailer"></div>
+			<p>Сражайся за Отечество в противостоянии виртуальных Республик!</p>
+			<div class="btn"><a href="" class="download">Играть бесплатно</a></div>
+		</div>
+	</div>
+ 	<div class="second-screen">
+		<div class="container">
+			<div class="title"><div class="title-wrapper">CityBattle - бесплатный многопользовательский шутер, в котором роботы со всего мира схлестнулись в ожесточенной схватке за свои города</div><div class="bg"></div></div>
+			<ul>
+				<li><span>Выбери</span> своего боевого робота из 7 классов</li>
+				<li>Развивай и настраивай его под свой <span>уникальный стиль</span></li>
+				<li>Вступай в бой и <span>выигрывай</span> многочисленные сражения</li>
+				<li><span>Возглавь</span> взвод или целую республику</li>
+				<li>И одержи безоговорочную победу в <span>глобальной войне</span>!</li>
+			</ul>
+			<div class="btn"><a href="" class="download">Играть бесплатно</a></div>
+		</div>
+	</div>
+	<div class="third-screen">
+		<div class="container">
+			<div class="title"><div class="title-wrapper">ВЫБЕРИ СВОЮ РОЛЬ В ИГРЕ <br>
+				<span>Возьми под контроль разные классы боевых роботов.</span></div>
+				<div class="bg"></div>
+			</div>
+		</div>
+		<div class="container container-flex">
+			<div class="left">
+				<div class="class-name">
+					<ul>
+						<li data-title='1' class='active'>Техник</li>
+						<li data-title='2'>Штурмовик</li>
+						<li data-title='3'>Поджигатель</li>
+						<li data-title='4'>Снайпер</li>
+						<li data-title='5'>Бомбер</li>
+						<li data-title='6'>Страж</li>
+						<li data-title='7'>Диверсант</li>
+					</ul>
+				</div>
+				<div class="class-description">
+					<ul>
+						<li data-description='1' class='active'>Роботы класса Техник предназначены как для ремонта союзников в бою, так и для нанесения урона самонаводящимися плазменными шарами или мощными импульсами.</li>
+						<li data-description='2'>Летающие роботы класса Штурмовик специализируются на обстреле противника залпами управляемых ракет с большой высоты или на разрезании бронированных целей мощным лазером в ближнем бою.</li>
+						<li data-description='3'>Специализируются на уничтожении групп противника в ближнем бою. Огнемет Поджигателя нагревает вражеских роботов, делая их более уязвимыми для всех атак.</li>
+						<li data-description='4'>Класс направлен на уничтожение ключевых целей противника. Для защиты снайперы опираются на скрытность и хитрость, а для атаки – на чудовищную мощь своего рейлгана.</li>
+						<li data-description='5'>Роботы класса Бомбер предназначены для контроля территории и нападения на целые группы противников. Быстро передвигаясь, Бомберы всегда оказываются вовремя в самых нужных местах.</li>
+						<li data-description='6'>Страж совершает рывок вперед. При столкновении с противниками создается взрыв, оглушающий их и наносящий урон.</li>
+						<li data-description='7'>Роботы класса Диверсант разработаны для разведки и борьбы против мобильных и, особенно, летающих целей. Самонаводящаяся штурмовая винтовка Смарт эффективна на любой дистанции.</li>
+						<div class="mob-popup-close"></div>
+					</ul>
+				</div>
+				<div class="classes-list">
+					<ul>
+						<li data-class='1' class='active'>Техник</li>
+						<li data-class='2'>Штурмовик</li>
+						<li data-class='3'>Поджигатель</li>
+						<li data-class='4'>Снайпер</li>
+						<li data-class='5'>Бомбер</li>
+						<li data-class='6'>Страж</li>
+						<li data-class='7'>Диверсант</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mobile-pers-block">
+				<div class="art">
+					<ul>
+						<li data-art='1'>
+							<img src="img/class_art_1_mob.png" class="mobile_art" >
+						</li>
+						<li data-art='2'>
+							<img src="img/class_art_2_mob.png" class="mobile_art" >
+						</li>
+						<li data-art='3'>
+							<img src="img/class_art_3_mob.png" class="mobile_art" >
+						</li>
+						<li data-art='4'>
+							<img src="img/class_art_4_mob.png" class="mobile_art" >
+						</li>
+						<li data-art='5'>
+							<img src="img/class_art_5_mob.png" class="mobile_art" >
+						</li>
+						<li data-art='6'>
+							<img src="img/class_art_6_mob.png" class="mobile_art" >
+						</li>
+						<li data-art='7'>
+							<img src="img/class_art_7_mob.png" class="mobile_art" >
+						</li>
+					</ul>
+				</div>
+				<div class="description-mobile"></div>
+				<ul class="ab-list ab-list-mob">
+					<li data-abilities='1' class='ab-active'>
+						<div class="top">
+							<ul> 
+								<li class=""><img src="img/icons/1-1.png"></li>
+								<li class="active"><img src="img/icons/1-3.png"></li>
+								<li class=""><img src="img/icons/1-4.png"></li>
+							</ul>
+						</div>
+						<div class="bottom">
+							<ul>
+								<li>
+									<span class="name"><span>Массовый ремонт</span></span>
+									<span class="text">Создает зону, в которой Техник и cоюзники восстанавливают прочность. Потребляет сферу.</span>
+								</li>
+								<li class="active">
+									<span class="name"><span>телепорт</span></span>
+									<span class="text">Телепортирует Техника к выбранному союзнику даже через стены. Потребляет сферу</span>
+								</li>
+								<li>
+									<span class="name"><span>импульс</span></span>
+									<span class="text">Отбрасывает противников перед Техником, нанося урон. При столкновении с препятствием, отброшенный противник оглушается и получает дополнительный урон. Потребляет сферу.</span>
+								</li>
+								<div class="mob-popup-close"></div>
+							</ul>
+						</div>
+					</li>
+					<li data-abilities='2'>
+						<div class="top">
+							<ul>
+								<li><img src="img/icons/2-1.png"></li>
+								<li class="active"><img src="img/icons/2-2.png"></li>
+								<li><img src="img/icons/2-3.png"></li>
+							</ul>
+						</div>
+						<div class="bottom">
+							<ul>
+								<li>
+									<span class="name"><span>Рывок</span></span>
+									<span class="text">Быстрое перемещение по направлению движения в горизонтальной плоскости.</span>
+								</li>
+								<li class="active">
+									<span class="name"><span>полёт</span></span>
+									<span class="text">Штурмовик набирает высоту и летает, расходуя Топливо. Топливо постепенно восстанавливается.</span>
+								</li>
+								<li>
+									<span class="name"><span>метеор</span></span>
+									<span class="text">Штурмовик пикирует вниз, нанося урон по площади. Урон метеора зависит от высоты, на которой он был активирован. При использовании на земле, наносит минимальный урон. Удержание клавиши активации позволяет пикировать прицельно.</span>
+								</li>
+								<div class="mob-popup-close"></div>
+
+							</ul>
+						</div>
+					</li>
+					<li data-abilities='3'>
+						<div class="top">
+							<ul>
+								<li><img src="img/icons/3-1.png"></li>
+								<li class="active"><img src="img/icons/3-2.png"></li>
+								<li><img src="img/icons/3-3.png"></li>
+							</ul>
+						</div>
+						<div class="bottom">
+							<ul>
+								<li>
+									<span class="name"><span>второй шанс</span></span>
+									<span class="text">Поджигатель восстанавливает прочность, расходуя заряд второго шанса. Заряд накапливается при нанесении урона и уничтожении противников. Смертельный урон при полном заряде не убивает Поджигателя, а сбрасывает заряд, восстанавливая его прочность.</span>
+								</li>
+								<li class="active">
+									<span class="name"><span>прыжок</span></span>
+									<span class="text">Поджигатель совершает мощный прыжок, нанося урон по площади в точке приземления.</span>
+								</li>
+								<li>
+									<span class="name"><span>ударная волна</span></span>
+									<span class="text">Поджигатель наносит мощный урон всем противникам в радиусе вокруг себя. Ударная волна имеет небольшую задержку между активацией и срабатыванием.</span>
+								</li>
+								<div class="mob-popup-close"></div>
+
+							</ul>
+						</div>
+					</li>
+					<li data-abilities='4'>
+						<div class="top">
+							<ul>
+								<li><img src="img/icons/4-1.png"></li>
+								<li class="active"><img src="img/icons/4-2.png"></li>
+								<li><img src="img/icons/4-3.png"></li>
+							</ul>
+						</div>
+						<div class="bottom">
+							<ul>
+								<li>
+									<span class="name"><span>Возврат</span></span>
+									<span class="text">Снайпер может разместить на уровне специальный маячок. Пока он активен, к нему можно моментально переместиться из любого места на карте. Удержанием кнопки активации маяк можно вернуть.</span>
+								</li>
+								<li class="active">
+									<span class="name"><span>приманка</span></span>
+									<span class="text">Снайпер создает двойника, который стреляет по противникам, отвлекая и замедляя их. Удержание клавиши активации позволяет точнее выбрать место для размещения приманки.</span>
+								</li>
+								<li>
+									<span class="name"><span>МАСКИРОВКА</span></span>
+									<span class="text">Пока маскировка активна, Снайпер практически невидим для противника, а его скорость увеличена. Стрельба или получение урона сбрасывают маскировку а применение способностей или перезарядка - нет.</span>
+								</li>
+								<div class="mob-popup-close"></div>
+
+							</ul>
+						</div>
+					</li>
+					<li data-abilities='5'>
+						<div class="top">
+							<ul>
+								<li><img src="img/icons/5-1.png"></li>
+								<li class="active"><img src="img/icons/5-2.png"></li>
+								<li><img src="img/icons/5-3.png"></li>
+							</ul>
+						</div>
+						<div class="bottom">
+							<ul>
+								<li>
+									<span class="name"><span>Форсаж</span></span>
+									<span class="text">Бомбер быстро летит в направлении курсора мыши, расходуя Топливо. Топливо постепенно восстанавливается.</span>
+								</li>
+								<li class="active">
+									<span class="name"><span>ТОРНАДО</span></span>
+									<span class="text">Запускает снаряд, затягивающий и оглушающий противников, а также наносящий урон по области.</span>
+								</li>
+								<li>
+									<span class="name"><span>БАРРИКАДА</span></span>
+									<span class="text">Бомбер создает перед собой энергетический барьер, блокирующий огонь противника. Баррикада исчезает при получении критического урона или спустя несколько секунд.</span>
+								</li>
+								<div class="mob-popup-close"></div>
+
+							</ul>
+						</div>
+					</li>
+					<li data-abilities='6'>
+						<div class="top">
+							<ul>
+								<li><img src="img/icons/6-1.png"></li>
+								<li class="active"><img src="img/icons/6-2.png"></li>
+								<li><img src="img/icons/6-3.png"></li>
+							</ul>
+						</div>
+						<div class="bottom">
+							<ul>
+								<li>
+									<span class="name"><span>Таран</span></span>
+									<span class="text">Страж совершает рывок вперед. При столкновении с противникоми создается взрыв, оглушающий их и наносящий урон.</span>
+								</li>
+								<li class="active">
+									<span class="name"><span>Лазер</span></span>
+									<span class="text">Лазер наносит урон и временно уменьшает способность противника наносить урон. Урон, получаемый Стражем и его щитом, конвертируется в Заряд лазера.</span>
+								</li>
+								<li>
+									<span class="name"><span>Щит</span></span>
+									<span class="text">Страж проецирует перед собой энергетический щит, который защищает самого Стража и его союзников от урона. Запас прочности щита восстанавливается в выключенном состоянии.</span>
+								</li>
+								<div class="mob-popup-close"></div>
+
+							</ul>
+						</div>
+					</li>
+					<li data-abilities='7'>
+						<div class="top">
+							<ul>
+								<li><img src="img/icons/7-1.png"></li>
+								<li class="active"><img src="img/icons/7-2.png"></li>
+								<li><img src="img/icons/7-3.png"></li>
+							</ul>
+						</div>
+						<div class="bottom">
+							<ul>
+								<li>
+									<span class="name"><span>скачок</span></span>
+									<span class="text">Диверсант телепортируется в указанную точку на небольшое расстояние. Удержание клавиши активации позволяет точнее выбрать место скачка.</span>
+								</li>
+								<li class="active">
+									<span class="name"><span>граната</span></span>
+									<span class="text">Диверсант бросает гранату, которая взрывается после короткой задержки или при приближении противника, нанося урон и замедляя его.</span>
+								</li>
+								<li>
+									<span class="name"><span>сканер</span></span>
+									<span class="text">Диверсант сканирует местность в небольшом радиусе вокруг себя, обнаруживая всех скрытых противников и подсвечивая их всквозь стены.</span>
+								</li>
+								<div class="mob-popup-close"></div>
+
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="right">
+				<div class="art">
+					<ul>
+						<li data-art='1' class='active'>
+							<img src="img/class_art_1.png" class="dt_art">
+							<img src="img/class_art_1_mob.png" class="mobile_art" >
+						</li>
+						<li data-art='2'>
+							<img src="img/class_art_2.png" class="dt_art">
+							<img src="img/class_art_2_mob.png" class="mobile_art" >
+						</li>
+						<li data-art='3'>
+							<img src="img/class_art_3.png" class="dt_art">
+							<img src="img/class_art_3_mob.png" class="mobile_art" >
+						</li>
+						<li data-art='4'>
+							<img src="img/class_art_4.png" class="dt_art">
+							<img src="img/class_art_4_mob.png" class="mobile_art" >
+						</li>
+						<li data-art='5'>
+							<img src="img/class_art_5.png" class="dt_art">
+							<img src="img/class_art_5_mob.png" class="mobile_art" >
+						</li>
+						<li data-art='6'>
+							<img src="img/class_art_6.png" class="dt_art">
+							<img src="img/class_art_6_mob.png" class="mobile_art" >
+						</li>
+						<li data-art='7'>
+							<img src="img/class_art_7.png" class="dt_art">
+							<img src="img/class_art_7_mob.png" class="mobile_art" >
+						</li>
+					</ul>
+				</div>
+				<div class="abilities">
+					<div class="title">Способности:</div>
+					<ul class="ab-list">
+						<li data-abilities='1' class='ab-active'>
+							<div class="top">
+								<ul> 
+									<li class=""><img src="img/icons/1-1.png"></li>
+									<li class="active"><img src="img/icons/1-3.png"></li>
+									<li class=""><img src="img/icons/1-4.png"></li>
+								</ul>
+							</div>
+							<div class="bottom">
+								<ul>
+									<li>
+										<span class="name"><span>Массовый ремонт</span></span>
+										<span class="text">Создает зону, в которой Техник и cоюзники восстанавливают прочность. Потребляет сферу.</span>
+									</li>
+									<li class="active">
+										<span class="name"><span>телепорт</span></span>
+										<span class="text">Телепортирует Техника к выбранному союзнику даже через стены. Потребляет сферу</span>
+									</li>
+									<li>
+										<span class="name"><span>импульс</span></span>
+										<span class="text">Отбрасывает противников перед Техником, нанося урон. При столкновении с препятствием, отброшенный противник оглушается и получает дополнительный урон. Потребляет сферу.</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li data-abilities='2'>
+							<div class="top">
+								<ul>
+									<li><img src="img/icons/2-1.png"></li>
+									<li class="active"><img src="img/icons/2-2.png"></li>
+									<li><img src="img/icons/2-3.png"></li>
+								</ul>
+							</div>
+							<div class="bottom">
+								<ul>
+									<li>
+										<span class="name"><span>Рывок</span></span>
+										<span class="text">Быстрое перемещение по направлению движения в горизонтальной плоскости.</span>
+									</li>
+									<li class="active">
+										<span class="name"><span>полёт</span></span>
+										<span class="text">Штурмовик набирает высоту и летает, расходуя Топливо. Топливо постепенно восстанавливается.</span>
+									</li>
+									<li>
+										<span class="name"><span>метеор</span></span>
+										<span class="text">Штурмовик пикирует вниз, нанося урон по площади. Урон метеора зависит от высоты, на которой он был активирован. При использовании на земле, наносит минимальный урон. Удержание клавиши активации позволяет пикировать прицельно.</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li data-abilities='3'>
+							<div class="top">
+								<ul>
+									<li><img src="img/icons/3-1.png"></li>
+									<li class="active"><img src="img/icons/3-2.png"></li>
+									<li><img src="img/icons/3-3.png"></li>
+								</ul>
+							</div>
+							<div class="bottom">
+								<ul>
+									<li>
+										<span class="name"><span>второй шанс</span></span>
+										<span class="text">Поджигатель восстанавливает прочность, расходуя заряд второго шанса. Заряд накапливается при нанесении урона и уничтожении противников. Смертельный урон при полном заряде не убивает Поджигателя, а сбрасывает заряд, восстанавливая его прочность.</span>
+									</li>
+									<li class="active">
+										<span class="name"><span>прыжок</span></span>
+										<span class="text">Поджигатель совершает мощный прыжок, нанося урон по площади в точке приземления.</span>
+									</li>
+									<li>
+										<span class="name"><span>ударная волна</span></span>
+										<span class="text">Поджигатель наносит мощный урон всем противникам в радиусе вокруг себя. Ударная волна имеет небольшую задержку между активацией и срабатыванием.</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li data-abilities='4'>
+							<div class="top">
+								<ul>
+									<li><img src="img/icons/4-1.png"></li>
+									<li class="active"><img src="img/icons/4-2.png"></li>
+									<li><img src="img/icons/4-3.png"></li>
+								</ul>
+							</div>
+							<div class="bottom">
+								<ul>
+									<li>
+										<span class="name"><span>Возврат</span></span>
+										<span class="text">Снайпер может разместить на уровне специальный маячок. Пока он активен, к нему можно моментально переместиться из любого места на карте. Удержанием кнопки активации маяк можно вернуть.</span>
+									</li>
+									<li class="active">
+										<span class="name"><span>приманка</span></span>
+										<span class="text">Снайпер создает двойника, который стреляет по противникам, отвлекая и замедляя их. Удержание клавиши активации позволяет точнее выбрать место для размещения приманки.</span>
+									</li>
+									<li>
+										<span class="name"><span>МАСКИРОВКА</span></span>
+										<span class="text">Пока маскировка активна, Снайпер практически невидим для противника, а его скорость увеличена. Стрельба или получение урона сбрасывают маскировку а применение способностей или перезарядка - нет.</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li data-abilities='5'>
+							<div class="top">
+								<ul>
+									<li><img src="img/icons/5-1.png"></li>
+									<li class="active"><img src="img/icons/5-2.png"></li>
+									<li><img src="img/icons/5-3.png"></li>
+								</ul>
+							</div>
+							<div class="bottom">
+								<ul>
+									<li>
+										<span class="name"><span>Форсаж</span></span>
+										<span class="text">Бомбер быстро летит в направлении курсора мыши, расходуя Топливо. Топливо постепенно восстанавливается.</span>
+									</li>
+									<li class="active">
+										<span class="name"><span>ТОРНАДО</span></span>
+										<span class="text">Запускает снаряд, затягивающий и оглушающий противников, а также наносящий урон по области.</span>
+									</li>
+									<li>
+										<span class="name"><span>БАРРИКАДА</span></span>
+										<span class="text">Бомбер создает перед собой энергетический барьер, блокирующий огонь противника. Баррикада исчезает при получении критического урона или спустя несколько секунд.</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li data-abilities='6'>
+							<div class="top">
+								<ul>
+									<li><img src="img/icons/6-1.png"></li>
+									<li class="active"><img src="img/icons/6-2.png"></li>
+									<li><img src="img/icons/6-3.png"></li>
+								</ul>
+							</div>
+							<div class="bottom">
+								<ul>
+									<li>
+										<span class="name"><span>Таран</span></span>
+										<span class="text">Страж совершает рывок вперед. При столкновении с противникоми создается взрыв, оглушающий их и наносящий урон.</span>
+									</li>
+									<li class="active">
+										<span class="name"><span>Лазер</span></span>
+										<span class="text">Лазер наносит урон и временно уменьшает способность противника наносить урон. Урон, получаемый Стражем и его щитом, конвертируется в Заряд лазера.</span>
+									</li>
+									<li>
+										<span class="name"><span>Щит</span></span>
+										<span class="text">Страж проецирует перед собой энергетический щит, который защищает самого Стража и его союзников от урона. Запас прочности щита восстанавливается в выключенном состоянии.</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li data-abilities='7'>
+							<div class="top">
+								<ul>
+									<li><img src="img/icons/7-1.png"></li>
+									<li class="active"><img src="img/icons/7-2.png"></li>
+									<li><img src="img/icons/7-3.png"></li>
+								</ul>
+							</div>
+							<div class="bottom">
+								<ul>
+									<li>
+										<span class="name"><span>скачок</span></span>
+										<span class="text">Диверсант телепортируется в указанную точку на небольшое расстояние. Удержание клавиши активации позволяет точнее выбрать место скачка.</span>
+									</li>
+									<li class="active">
+										<span class="name"><span>граната</span></span>
+										<span class="text">Диверсант бросает гранату, которая взрывается после короткой задержки или при приближении противника, нанося урон и замедляя его.</span>
+									</li>
+									<li>
+										<span class="name"><span>сканер</span></span>
+										<span class="text">Диверсант сканирует местность в небольшом радиусе вокруг себя, обнаруживая всех скрытых противников и подсвечивая их всквозь стены.</span>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container btn-cont">
+			<div class="btn"><a href="" class="download">Играть бесплатно</a></div>
+		</div>
+		<div class="container custom-dots">
+		</div>
+	</div>
+	<div class="fourth-screen">
+		<div class="container">
+			<div class="title">
+				Скриншоты:
+			</div>
+			<img src="img/screens/preview1.png" class="screen screen1">
+			<img src="img/screens/preview2.png" class="screen screen2">
+			<img src="img/screens/preview3.png" class="screen screen3">
+			<img src="img/screens/preview4.png" class="screen screen4">
+			<img src="img/screens/preview5.png" class="screen screen5">
+			<img src="img/screens/preview6.png" class="screen screen6">
+			<img src="img/screens/preview7.png" class="screen screen7">
+			<img src="img/screens/preview8.png" class="screen screen8">
+			<ul class="mobile-screens">
+				<li>
+					<img src="img/screens/mob_preview1.png" class="screen screen1">
+				</li>
+				<li>
+					<img src="img/screens/mob_preview2.png" class="screen screen2">
+				</li>
+				<li>
+					<img src="img/screens/mob_preview3.png" class="screen screen3">
+				</li>
+				<li>
+					<img src="img/screens/mob_preview4.png" class="screen screen4">
+				</li>
+				<li>
+					<img src="img/screens/mob_preview5.png" class="screen screen5">
+				</li>
+				<li>
+					<img src="img/screens/mob_preview6.png" class="screen screen6">
+				</li>
+				<li>
+					<img src="img/screens/mob_preview7.png" class="screen screen7">
+				</li>
+				<li>
+					<img src="img/screens/mob_preview8.png" class="screen screen8">
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="fifth-screen">
+		<div class="container">
+			<div class="title">Технические требования:</div>
+		</div>
+		<div class="container container-flex">
+			<div class="left">
+				<div class="title">Минимальные:</div>
+				<ul>
+					<li><span>ОС:</span> 64-bit (Windows 7, Windows 8, Windows 10)</li>
+					<li><span>Процессор:</span> Quad Core. Intel(R) Core(TM) i3 ~ 2.5GHz</li>
+					<li><span>Оперативная память:</span> 4 GB ОЗУ</li>
+					<li><span>Видеокарта:</span> NVIDIA GeForce GTX 460</li>
+					<li><span>DirectX:</span> Версии 11</li>
+					<li><span>Сеть:</span> Широкополосное подключение к интернету</li>
+					<li><span>Место на диске:</span> 15 GB</li>
+					<li><span>Дополнительно:</span> Connection: 256 kbps upstream or faster</li>
+				</ul>
+			</div>
+			<div class="right">
+				<div class="title">рекомендованные:</div>
+				<ul>
+					<li><span>ОС:</span> 64-bit (Windows 8, Windows 10)</li>
+					<li><span>Процессор:</span> Quad Core. Intel(R) Core(TM) i5 ~ 2.5GHz</li>
+					<li><span>Оперативная память:</span> 8 GB ОЗУ</li>
+					<li><span>Видеокарта:</span> NVIDIA 760GTX или AMD R9 280X</li>
+					<li><span>DirectX:</span> Версии 11</li>
+					<li><span>Сеть:</span> Широкополосное подключение к интернету</li>
+					<li><span>Место на диске:</span> 20 GB</li>
+					<li><span>Дополнительно:</span> Connection: 256 kbps upstream or faster</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<div class="btn"><a href="" class="download">Играть бесплатно</a></div>
+			
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="logos">
+				<div class="destiny-logo"><img src="img/destiny.png"></div>
+				<div class="rikor-logo"><img src="img/rikor.png"></div>
+			</div>
+			<div class="texts">
+				<div class="links">
+					<a href="" target="_blank">Договор-оферта</a> ♦ 
+					<a href="" target="_blank">Правила игры</a> ♦ 
+					<a href="" target="_blank">Лицензионное соглашение</a>
+				</div>
+                <a href="" target="_blank" class="conf">Политика конфиденциальности</a>
+
+                <p>© Rikor. All rights reserved. <br> Published by Destiny.Games. All rights reserved.</p>
+			</div>
+			<div class="stat">
+				<div id="LIcounter">
+					<a href="http://www.liveinternet.ru/click" target="_blank" rel="nofollow">
+						<img class="animate" src="img/lj.png" title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня"  border="0" width="31" height="31">
+					</a>
+				</div>
+
+				<div class="ageico"><img src="img/ages.png"></div>
+			</div>
+			<div class="copy-mob">
+				<p>© Rikor. All rights reserved. <br> Published by Destiny.Games. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+	<div class="video-popup-overlay ">
+		<div class="video-popup-wrapper">
+			<div class="close"></div>
+			<div class="video-block"></div>
+		</div>
+	</div>
+	<div class="screen-popup-overlay ">
+		<div class="screen-popup-wrapper">
+			<div class="close"></div>
+			<div class="screen-block">
+				
+			</div>
+		</div>
+	</div>
+
+
+
+	
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+				
+	<script>
+  		
+		$(document).ready(function(){
+
+			var $window = $(window);
+
+		    function checkWidth() {
+
+		        var windowsize = $window.width();
+		        if (windowsize < 768) {
+
+
+
+		            $('.fifth-screen .container-flex').slick({
+					  	dots: true,
+						infinite: false,
+						speed: 300,
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						arrows: false,
+					});
+		            $('.fourth-screen .mobile-screens').slick({
+					  	dots: true,
+						infinite: false,
+						speed: 300,	
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						arrows: false,
+						centerMode: true,
+						variableWidth: true
+					});
+		            $('.third-screen .mobile-pers-block .art ul').slick({
+					  	dots: true,
+						infinite: false,
+						speed: 300,
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						arrows: false,
+						centerMode: true,
+						variableWidth: true,
+						// fade: true,
+						appendDots: $('.custom-dots')
+					});
+					$('.fourth-screen li').on('click', function() {
+						var imgMobIndex = $(this).index() + 1
+						$('.screen-popup-overlay').addClass('shown')
+						$('.screen-popup-overlay .screen-block').html('<img src="img/screens/screen' + imgMobIndex + '.jpg">')
+					})
+		        } else {
+	        		// $('.fifth-screen .container-flex').slick("unslick")
+	        		// $('.fourth-screen .mobile-screens').slick("unslick")
+					$('.fourth-screen img').on('click', function() {
+						var imgIndex = $(this).index()
+						$('.screen-popup-overlay').addClass('shown')
+						$('.screen-popup-overlay .screen-block').html('<img src="img/screens/screen' + imgIndex + '.jpg">')
+					})
+		        }
+		    }
+		    checkWidth();
+		    $(window).resize(checkWidth);
+
+
+
+
+
+
+			$('.first-screen .play-trailer').on('click', function() {
+				$('.video-popup-overlay').addClass('shown')
+				$('.video-popup-overlay .video-block').html('<video autoplay controls class=""><source src="video/cb_trailer.mp4" type="video/mp4"></video>')
+			})
+			$('.video-popup-overlay .close').on('click', function() {
+				$('.video-popup-overlay').removeClass('shown')
+				$('.video-popup-overlay .video-block').html('')
+			})
+
+
+
+
+
+			
+			
+			$('.screen-popup-overlay .close').on('click', function() {
+				$('.screen-popup-overlay').removeClass('shown')
+				$('.screen-popup-overlay .screen-block').html('')
+			})
+
+
+
+			$('.third-screen .classes-list ul li').on('click', function() {
+				var classIndex = $(this).index() + 1
+				$(this).addClass('active').siblings().removeClass('active')
+
+				$('.third-screen .class-name li').removeClass('active')
+				$('.third-screen .class-name li[data-title="' + classIndex + '"]').addClass('active')
+
+				$('.third-screen .class-description li').removeClass('active')
+				$('.third-screen .class-description li[data-description="' + classIndex + '"]').addClass('active')
+
+				$('.third-screen .right .art li').removeClass('active')
+				$('.third-screen .right .art li[data-art="' + classIndex + '"]').addClass('active')
+
+				$('.third-screen .right .abilities .ab-list>li').removeClass('ab-active')
+				$('.third-screen .right .abilities .top li').removeClass('open')
+				$('.third-screen .right .abilities .ab-list>li[data-abilities="' + classIndex + '"]').addClass('ab-active')
+
+				$('.third-screen .right .abilities .ab-active .top li').addClass('open')
+			})
+
+		
+			$('.third-screen .abilities li .top ul').on('click', 'li:not(.active)', function() {
+				$(this).addClass('active').siblings().removeClass('active')
+				if ($(this).index() === 0) {
+					$(this).next().css('order', 1).next().css('order', 3)
+				} else if ($(this).index() === 2) {
+					$(this).prev().css('order', 3).prev().css('order', 1)
+				} else if ($(this).index() === 3) {
+					$(this).prev().css('order', 4).prev().css('order', 3)
+				}
+
+
+				$('.third-screen .abilities li.ab-active .bottom ul').find('li').removeClass('active').eq($(this).index()).addClass('active');
+
+			})
+
+
+
+			$('.third-screen .mobile-pers-block .art ul').on('swipe', function() {
+				var classMobIndex = $('.third-screen .mobile-pers-block li.slick-current').index() + 1
+				$('.third-screen .class-name li').removeClass('active')
+				$('.third-screen .class-name li[data-title="' + classMobIndex + '"]').addClass('active')
+				$('.third-screen .class-description li').removeClass('active')
+				$('.third-screen .class-description li[data-description="' + classMobIndex + '"]').addClass('active')
+				$('.third-screen .ab-list-mob>li').removeClass('ab-active')
+				$('.third-screen .ab-list-mob>li[data-abilities="' + classMobIndex + '"]').addClass('ab-active')
+				
+
+
+
+			})
+			$('.third-screen .custom-dots li').on('click', function() {
+				var classMobDotIndex = $(this).index() + 1
+				$('.third-screen .class-name li').removeClass('active')
+				$('.third-screen .class-name li[data-title="' + classMobDotIndex + '"]').addClass('active')
+				$('.third-screen .class-description li').removeClass('active')
+				$('.third-screen .class-description li[data-description="' + classMobDotIndex + '"]').addClass('active')
+				$('.third-screen .ab-list-mob>li').removeClass('ab-active')
+				$('.third-screen .ab-list-mob>li[data-abilities="' + classMobDotIndex + '"]').addClass('ab-active')
+				
+
+
+
+			})
+
+			$('.third-screen .mobile-pers-block .top li').on('click', function() {
+				$('.third-screen .mobile-pers-block .bottom').addClass('open-pop-ab')
+				$('.third-screen .mobile-pers-block .ab-active .bottom ul').find('li').removeClass('active').eq($(this).index()).addClass('active');
+
+			})
+
+
+
+
+
+
+
+
+
+
+
+
+			$('.third-screen .description-mobile').on('click', function() {
+				$('.third-screen .class-description').addClass('open-pop')
+			})
+
+			$('.third-screen .mob-popup-close, .third-screen .class-description, .mobile-pers-block .bottom').on('click', function() {
+				$('.third-screen .class-description').removeClass('open-pop')
+				$('.third-screen .mobile-pers-block .bottom').removeClass('open-pop-ab')
+
+			})
+
+
+
+
+
+
+
+
+
+
+
+			$('.third-screen .ab-list-mob .top ul').on('click', 'li:not(.active)', function() {
+				$(this).addClass('active').siblings().removeClass('active')
+				if ($(this).index() === 0) {
+					$(this).next().css('order', 1).next().css('order', 3)
+				} else if ($(this).index() === 2) {
+					$(this).prev().css('order', 3).prev().css('order', 1)
+				} else if ($(this).index() === 3) {
+					$(this).prev().css('order', 4).prev().css('order', 3)
+				}
+
+
+				$('.third-screen .abilities li.ab-active .bottom ul').find('li').removeClass('active').eq($(this).index()).addClass('active');
+
+			})
+
+
+
+
+
+
+
+
+		})
+
+	</script>
+
+
+
+
+
+
+</body>
+</html>
